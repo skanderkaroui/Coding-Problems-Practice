@@ -19,10 +19,10 @@ class Node:
         else:
             self.data = data
 
-    def balanced(self):
+    def is_balanced(self):
         if self.data:
             if self.left and self.right:
-                balanced(self.data)
+                is_balanced(self.data)  
         if (self.data - self.left == 1) or (self.right - self.data == 1):
             return True
         else:
