@@ -19,12 +19,11 @@ class Solution(object):
             
             while i + 1 < len(nums) and nums[i] == nums[i + 1]:
                 i += 1
-
             dfs(i + 1)
 
         dfs(0)
         return res
     
-obj = Solution()
-print(obj.subsetsWithDup([[1,2,2]]))
-print(obj.subsetsWithDup([[0]]))
+s = Solution()
+print(s.subsetsWithDup([1,2,2]))
+print(s.subsetsWithDup([0]))
