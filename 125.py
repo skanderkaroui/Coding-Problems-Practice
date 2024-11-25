@@ -16,3 +16,4 @@ class Solution(object):
 obj = Solution()
 print(obj.isPalindrome("A man, a plan, a canal: Panama"))
 
+
