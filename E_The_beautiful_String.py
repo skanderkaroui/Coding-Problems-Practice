@@ -4,7 +4,6 @@ for _ in range(t):
     s = input()
     q = int(input())
     s_list = list(s)
-
     for _ in range(q):
         i, v = list(map(int,input().split()))
 

@@ -7,18 +7,19 @@ for _ in range(t):
     start = True
 
     for i in range(n):
-
-        if s[i] == "W" and start == False:
-            continue
-        
-        if s[i] == "W" and start == True:
-            count += 1
-        
-        if s[i] == "B" and start == False:
-            start = True
-            count += 1
-        
+        if s[i] == "W":
+            if start == False:
+                continue
+            if start == True:
+                if i != n:
+                    count += 1
+                else:
+                    continue         
         else:
-            count += 1
+            if start == False:
+                start = True
+                count += 1
+            else:
+                count += 1
     
     print(count)

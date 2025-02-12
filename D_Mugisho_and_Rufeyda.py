@@ -10,14 +10,4 @@ def divisible():
     else:
         return -1
 
-# def divisible():
-#     while min < max:
-#         mid = (max - min) // 2
-
-#         if mid % t == 0:
-#             return mid
-        
-        
-    
-
 print(divisible())
