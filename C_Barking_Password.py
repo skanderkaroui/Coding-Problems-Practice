@@ -7,16 +7,13 @@ def bark():
         bark = input()
         words_barked.append(bark)
 
-        if n == 1:
-            return password in bark + bark
+    if password in words_barked:
+        return True
 
-        for word1 in words_barked:
-            for word2 in words_barked:
-                if password in word1 + word2:
-                    return True
-        return False
+    for word1 in words_barked:
+        for word2 in words_barked:
+            if password in word1 + word2:
+                return True
+    return False
 
-if bark():
-    print("YES")
-else:
-    print("NO")
+print("YES" if bark() else "NO")
