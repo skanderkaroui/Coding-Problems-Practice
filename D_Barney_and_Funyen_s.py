@@ -7,6 +7,6 @@ m = 0
 
 for i in range(n):
     m += p[i]
-    
+
     for j in range(p):
-        
+        print("")
